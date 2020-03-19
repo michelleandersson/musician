@@ -108,6 +108,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1257px) {
+  .info__container {
+    margin-top: 50px;
+  }
+}
 
 .info {
   margin-left: 10px;

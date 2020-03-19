@@ -104,6 +104,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    @media screen  and (max-width: 1257px) {
+        margin-top: 50px;
+    }
     
 }
 
