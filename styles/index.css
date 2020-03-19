@@ -1,0 +1,134 @@
+body {
+  background-color: black;
+  color: white;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.logo {
+  position: relative;
+  top: 70px;
+  left: 10px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(97, 97, 97, 0.6);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay li {
+  list-style: none;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: black;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.open {
+  position: relative;
+  top: 45px;
+  left: 20%;
+  margin-right: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.open:hover {
+  color: #adaaaa;
+}
+@media screen and (max-width: 768px) {
+  .open {
+    position: relative;
+    top: 45px;
+    left: 80%;
+  }
+}
+
+.info__container {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info {
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.info > h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 84px;
+}
+
+.info > p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 22px;
+  margin-top: 43px;
+  width: 410px;
+  line-height: 1.5;
+}
+
+.image__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 585px;
+  width: 100%;
+  margin-left: 20%;
+}
+
+.image {
+  overflow: hidden;
+}
