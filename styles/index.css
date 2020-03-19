@@ -103,12 +103,28 @@ body {
   align-items: flex-start;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .info {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
 
 .info > h1 {
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: 500;
   font-size: 84px;
+}
+@media screen and (max-width: 768px) {
+  .info > h1 {
+    font-size: 72px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .info > p {
@@ -128,7 +144,19 @@ body {
   width: 100%;
   margin-left: 20%;
 }
+@media screen and (max-width: 768px) {
+  .image__container {
+    margin-left: 0;
+  }
+}
 
 .image {
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .image {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 0;
+  }
 }
