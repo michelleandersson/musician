@@ -6,8 +6,6 @@ $background-color: black;
 body {
     background-color: $background-color;
     color: $text-color;
-    max-width: 1440px;
-    height: 100vh;
 }
 
 .logo {
@@ -97,9 +95,16 @@ body {
     }
 }
 
+main {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
 .info__container {
     max-width: 1440px;
-    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     justify-content: flex-start;
     align-items: center;
